@@ -28,3 +28,41 @@ Die Anwendung steuert die Verarbeitung von Prompts über eine dreistufige, kogni
 
 ## 🎯 Ziel des Ablegers
 Mit diesem Werkzeug erhält die Community ein performantes, lokal lauffähiges System, das zeigt, wie KI-Architekturen über reine Textvorhersage hinauswachsen können, indem sie strukturierte Selbstbeobachtung und dynamische Gedächtnisintegration nativ miteinander verknüpfen.
+---
+
+## 🚀 Installation & Schnellstart
+
+Um diesen Ableger lokal auf deinem System auszuführen, folge einfach diesen Schritten:
+
+### 1. Repository klonen
+Klone das Projekt zuerst auf deinen lokalen Rechner:
+```bash
+git clone [https://github.com/macymm86/aurora-llm-backend.git](https://github.com/macymm86/aurora-llm-backend.git)
+cd aurora-llm-backend
+2. Virtuelle Umgebung einrichten (Empfohlen)
+Erstelle eine virtuelle Python-Umgebung, um Konflikte mit anderen Projekten zu vermeiden:
+
+Bash
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# Linux/MacOS
+python3 -m venv .venv
+source .venv/bin/activate
+3. Abhängigkeiten installieren
+Installiere alle benötigten Bibliotheken (PyQt6, LangChain, Vektorspeicher-Komponenten) über die requirements.txt:
+
+Bash
+pip install -r requirements.txt
+4. Anwendung starten
+Stelle sicher, dass deine lokale Inferenz-Engine (zB Ollama oder LM Studio) im Hintergrund läuft, und starte das Backend:
+
+Bash
+python aurora_LLM_backend.py
+⚙️ Voraussetzungen & System-Hinweise
+Python: Version 3.9 oder höher wird empfohlen.
+
+Lokale LLMs: Die Anwendung sucht automatisch nach laufenden lokalen Servern auf den Standard-Ports (z. B. Ollama auf http://localhost:11434).
+
+Speicher-Modus: Sollten die optionalen Pakete für das Langzeitgedächtnis (LangChain/Qdrant) nicht vollständig installiert sein, greift die Anwendung automatisch auf ein stabiles In-Memory-Fallback-System zurück, sodass die GUI in jedem Fall einsatzbereit bleibt.
