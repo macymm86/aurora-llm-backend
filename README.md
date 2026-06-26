@@ -30,15 +30,19 @@ Die Anwendung steuert die Verarbeitung von Prompts über eine dreistufige, kogni
 Mit diesem Werkzeug erhält die Community ein performantes, lokal lauffähiges System, das zeigt, wie KI-Architekturen über reine Textvorhersage hinauswachsen können, indem sie strukturierte Selbstbeobachtung und dynamische Gedächtnisintegration nativ miteinander verknüpfen.
 ---
 
+---
+
 ## 🚀 Installation & Schnellstart
 
 Um diesen Ableger lokal auf deinem System auszuführen, folge einfach diesen Schritten:
 
 ### 1. Repository klonen
 Klone das Projekt zuerst auf deinen lokalen Rechner:
+
 ```bash
 git clone [https://github.com/macymm86/aurora-llm-backend.git](https://github.com/macymm86/aurora-llm-backend.git)
 cd aurora-llm-backend
+
 2. Virtuelle Umgebung einrichten (Empfohlen)
 Erstelle eine virtuelle Python-Umgebung, um Konflikte mit anderen Projekten zu vermeiden:
 
@@ -56,7 +60,7 @@ Installiere alle benötigten Bibliotheken (PyQt6, LangChain, Vektorspeicher-Komp
 Bash
 pip install -r requirements.txt
 4. Anwendung starten
-Stelle sicher, dass deine lokale Inferenz-Engine (zB Ollama oder LM Studio) im Hintergrund läuft, und starte das Backend:
+Stelle sicher, dass deine lokale Inferenz-Engine (z. B. Ollama oder LM Studio) im Hintergrund läuft, und starte das Backend:
 
 Bash
 python aurora_LLM_backend.py
